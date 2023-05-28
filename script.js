@@ -1,11 +1,11 @@
 var botonEncriptar = document.querySelector(".btn-encriptar");
 var botonDesencriptar = document.querySelector(".btn-desencriptar");
-var imagen = document.querySelector(".imagen");
+var imagen = document.querySelector(".contenedorimagen");
 var contenedor = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".texto-resultado");
 
-botonEncriptar.onclick = encriptar();
-botonDesencriptar.onclick = desencriptar();
+botonEncriptar.onclick = encriptar;
+botonDesencriptar.onclick = desencriptar;
 
 function encriptar(){
     ocultarAdelante();
@@ -25,7 +25,7 @@ function recuperarTexto(){
 }
 
 function ocultarAdelante(){
-    imag;en.classList.add("ocultar");
+    imagen.classList.add("ocultar");
     contenedor.classList.add("ocultar");
 }
 
